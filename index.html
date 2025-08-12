@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Custom Cursor</title>
+<title>Full Page Custom Cursor</title>
 <style>
-    body {
-        cursor: url('cursor.png') 0 0, auto;
-        /* 
-          '0 0' sets the hotspot (the exact click point) 
-          to the top-left pixel of the image. 
-          You can adjust it, e.g. '16 16' for center.
-        */
+    html, body {
+        height: 100%;
+        margin: 0;
+        cursor: url('cursor.png') 0 0, auto; 
+        /* Change 0 0 to adjust the click hotspot */
     }
 </style>
 </head>
 <body>
-    <h1>Custom Cursor Demo</h1>
-    <p>Move your mouse around to see the custom cursor.</p>
+    <h1>Custom Cursor Everywhere</h1>
+    <p>Move the mouse anywhere — the custom cursor stays active.</p>
 </body>
 </html>
