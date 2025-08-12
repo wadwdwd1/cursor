@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Custom Cursor Example</title>
+<meta charset="UTF-8">
+<title>Custom Cursor</title>
 <style>
-  body {
-    /* URL to your custom cursor image */
-    cursor: url('cursor.png'), auto;
-  }
+    body {
+        cursor: url('cursor.png') 0 0, auto;
+        /* 
+          '0 0' sets the hotspot (the exact click point) 
+          to the top-left pixel of the image. 
+          You can adjust it, e.g. '16 16' for center.
+        */
+    }
 </style>
 </head>
 <body>
-  <h1>Hover around and see the custom cursor!</h1>
+    <h1>Custom Cursor Demo</h1>
+    <p>Move your mouse around to see the custom cursor.</p>
 </body>
 </html>
